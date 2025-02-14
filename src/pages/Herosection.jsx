@@ -2,7 +2,7 @@ import React from 'react'
 
 import rec from '../img/navimg/recruitment.png'
 
-import jobheart from '../img/navimg/job_heart.png'
+// import jobheart from '../img/navimg/job_heart.png'
 
 
 // Vacant Roles
@@ -69,7 +69,7 @@ const Herosection = ({ isvisible, togglehandle, user, usertoggle }) => {
             <div className="col-lg-6">
 
               < img className='rec_img' src={rec} alt="" />
-              < img className='rec_img' src={rec} alt="" />
+
 
             </div>
 
