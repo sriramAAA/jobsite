@@ -69,6 +69,7 @@ const Herosection = ({ isvisible, togglehandle, user, usertoggle }) => {
             <div className="col-lg-6">
 
               < img className='rec_img' src={rec} alt="" />
+              < img className='rec_img' src={rec} alt="" />
 
             </div>
 
