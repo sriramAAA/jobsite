@@ -1,3 +1,5 @@
+
+
 * {
     margin: 0;
     padding: 0;
@@ -648,8 +650,6 @@ body {
 
 
 
-
-
 .vacant-card {
     width: 230px;
     height: 190px;
@@ -685,6 +685,30 @@ body {
 
 }
 
+
+@media (min-width: 768px) and (max-width: 1024px) {
+
+    .vacant_rowsec {
+        margin-left:-10px;
+        height: 50px;
+    }
+
+    .vacant-card {
+        width: 170px;
+        height: 170px;
+    
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+    }
+    
+    .card-img {
+        max-width: 50px;
+        height: auto;
+    }
+
+}
 
 
 
@@ -793,6 +817,12 @@ body {
         text-align: center;
         margin-left: 0px;
     }
+
+
+    .applybtn_center{
+        margin-left: 1px !important;
+    }
+
 }
 
 
@@ -1132,7 +1162,7 @@ body {
 /* Base styles for all screen sizes */
 
 .red_box {
-    width: 1400px !important;
+    width: auto !important;
     height: 250px;
     background: linear-gradient(180deg, #0081A7 0%, #015670 100%);
 
@@ -1328,13 +1358,95 @@ body {
 
     }
 
-
     .redbtninut {
-        margin-left: -525px !important;
+        margin-left: -5px !important;
     }
 
 
 }
+
+
+
+
+
+
+@media screen and (min-width: 768px) and (max-width: 1024px) {
+
+    .red_box {
+        width: auto !important;
+        height: 300px;
+        background: linear-gradient(180deg, #0081A7 0%, #015670 100%);
+    
+        color: #FFFFFF;
+    
+    }
+
+
+    .redhrboxtext {
+        font-size: 45px !important;
+        width: 600px;
+        margin-top: 25px;
+        margin-left: 90px;
+        /* background-color: #94691C; */
+
+    }
+
+    .redhrboxpara {
+        font-size: 20px;
+        width: 400px;
+        margin-left: 0;
+        margin-top: -5px;
+        text-align: center;
+        margin-left: 130px;
+    }
+
+
+    .redhrbox-input {
+        width: 250px;
+        height: 60px;
+        border: 1px solid #ccc;
+
+        font-size: 16px;
+        outline: none;
+        padding: 15px !important;
+        margin-bottom: 10px;
+        margin-left: -150px;
+        border-top-left-radius: 90px;
+        border-bottom-left-radius: 90px;
+        border-width: 2px;
+
+    }
+
+    .redhrbox-btn {
+
+        width: 250px;
+        height: 60px;
+        /* margin-left: -1000px; */
+        margin-top:-1px;
+
+        padding: 20px !important;
+        border-top-right-radius: 90px;
+        border-bottom-right-radius: 90px;
+        border-width: 2px;
+        background: linear-gradient(360deg, #FAB12F 0%, #94691C 100%);
+        color: #000000;
+        border: none;
+        margin-left: -9px;
+
+    }
+
+    .redbtninut {
+        margin-left: -110px !important;
+        margin-top: 170px;
+    }
+
+
+
+}
+
+
+
+
 
 
 
@@ -1806,5 +1918,3 @@ display: flex;
 
 
 
-
-/* -------------------- */

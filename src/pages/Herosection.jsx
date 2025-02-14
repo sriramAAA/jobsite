@@ -1,3 +1,5 @@
+
+
 import React from 'react'
 
 import rec from '../img/navimg/recruitment.png'
@@ -35,6 +37,9 @@ import bag from '../img/navimg/bag.png'
 import close from '../img/navimg/close.png'
 import busnas from '../img/navimg/businessman.png'
 import candidate from '../img/navimg/candidate.png'
+
+import imgefooter from '../img/navimg/footerone.png'
+
 
 
 
@@ -375,7 +380,6 @@ const Herosection = ({ isvisible, togglehandle, user, usertoggle }) => {
       {/* redhrbox */}
 
 
-
       <div className="container-fluid">
         <div className="row red_box p-3 p-md-4 p-lg-5">
           {/* First Column */}
@@ -588,7 +592,9 @@ const Herosection = ({ isvisible, togglehandle, user, usertoggle }) => {
 
           </div>
 
-
+          <div className="col-lg-6">
+            <img src={imgefooter} className='imgefooter' alt="" />
+          </div>
 
 
 
@@ -662,6 +668,7 @@ const Herosection = ({ isvisible, togglehandle, user, usertoggle }) => {
           <div className="container">
 
             <div className="row">
+
               <div className="col-lg-6">
 
                 <div className="user_profile">
@@ -685,6 +692,9 @@ const Herosection = ({ isvisible, togglehandle, user, usertoggle }) => {
 
                 </div>
               </div>
+
+
+
             </div>
 
           </div>
@@ -726,3 +736,17 @@ const Herosection = ({ isvisible, togglehandle, user, usertoggle }) => {
 }
 
 export default Herosection
+
+
+
+
+
+
+
+
+
+
+
+
+
+

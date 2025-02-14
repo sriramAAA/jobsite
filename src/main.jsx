@@ -1,37 +1,4 @@
 
-// import { createRoot } from 'react-dom/client'
-// import './stylesheet/style.css'
-
-
-// import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
-
-
-// import Navbar from './component/Navbar'
-// import Herosection from './component/Herosection';
-
-
- 
-
-
-
-// createRoot(document.getElementById('root')).render(
-
-
-// <Router>
-
-// <Navbar    /> 
-
-// <Routes>
-  
-//   <Route path='/' element={<Herosection    />}/>
-
-  
-// </Routes>
-// </Router>
-
-// )
-
-
 
 
 
@@ -46,3 +13,4 @@ createRoot(document.getElementById('root')).render(
     <App />
   </Router>
 );
+
