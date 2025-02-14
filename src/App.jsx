@@ -4,6 +4,7 @@ import { Routes, Route } from 'react-router-dom';
 import Navbar from './component/Navbar';
 import Herosection from './pages/Herosection';
 import { useState } from 'react';
+import Footer from './component/Footer';
 
 
 
@@ -37,6 +38,7 @@ const usertoggle=()=>{
       <Routes>
         <Route path="/" element={<Herosection isvisible={isvisible} togglehandle={togglehandle} user={user}  usertoggle={usertoggle}  />} />
       </Routes>
+      <Footer />
     </>
   );
 };
