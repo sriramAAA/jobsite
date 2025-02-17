@@ -50,7 +50,13 @@ import closeperson from '../img/navimg/closeuser.png'
 
 
 
-const Herosection = () => {
+const Herosection = ({ isvisible, setisvisible , isvisibleform ,setisvisibleform}) => {
+
+    // show and hidden
+
+
+
+
     return (
         <div>
 
@@ -60,34 +66,34 @@ const Herosection = () => {
 
 
 
-
+            {/* -------------------------------------------------------------------------------------------------------------------------- */}
             {/* user form hidden and visible function */}
             {
-                true ? (
+                isvisibleform ? (
 
 
                     <div class="container hidden_box d-flex align-items-center justify-content-center">
-                    <div class="hidden_boder">
-                        <div class="header d-flex align-items-center">
-                            <button type="submit" class="hiddenlogin_btn"> Free Registration </button>
-                            <button class="close_btn">
-                                <img src={close} alt="Close" />
-                            </button>
-                        </div>
-                        <div class="row justify-content-center mt-4">
-                            <div class="col-md-6 col-lg-5 box-one">
-                                <img src={reg_candid} alt="Candidate" />
-                                <h3 class="mt-2">CANDIDATE</h3>
-                                <button type="button" class="h_reg_btn">REGISTER NOW</button>
+                        <div class="hidden_boder">
+                            <div class="header d-flex align-items-center">
+                                <button type="submit" class="hiddenlogin_btn"> Free Registration </button>
+                                <button class="close_btn">
+                                    <img src={close} alt="Close" onClick={()=>setisvisibleform(false)} />
+                                </button>
                             </div>
-                            <div class="col-md-6 col-lg-5 box-one">
-                                <img src={reg_emply} alt="Employer" />
-                                <h3 class="mt-2 emp_btn">EMPLOYER</h3>
-                                <button type="button" class="h_reg_btn">REGISTER NOW</button>
+                            <div class="row justify-content-center mt-4">
+                                <div class="col-md-6 col-lg-5 box-one">
+                                    <img src={reg_candid} alt="Candidate" />
+                                    <h3 class="mt-2">CANDIDATE</h3>
+                                    <button type="button" class="h_reg_btn">REGISTER NOW</button>
+                                </div>
+                                <div class="col-md-6 col-lg-5 box-one">
+                                    <img src={reg_emply} alt="Employer" />
+                                    <h3 class="mt-2 emp_btn">EMPLOYER</h3>
+                                    <button type="button" class="h_reg_btn">REGISTER NOW</button>
+                                </div>
                             </div>
                         </div>
                     </div>
-                </div>
 
                 ) : null
 
@@ -96,11 +102,13 @@ const Herosection = () => {
 
 
 
-
+            {/* -------------------------------------------------------------------------------------------------------------------------- */}
             {/* user profile  hidden and visible function */}
 
+
             {
-                true ? (
+                isvisible ? (
+
 
                     <div className="container">
                         <div className="row justify-content-end">
@@ -108,14 +116,13 @@ const Herosection = () => {
                                 <div className="user_profile">
                                     <ul className="list-group text-center">
 
-                                        <li className="list-group-item p-2 d-flex  gap-5 home_closebtn align-items-center">
-                                            <a className="text-decoration-none text-dark home_btn " href="#">Home</a>
-                                            <img src={closeperson} className=" user_closebtn  ms-5 rounded-5 bg-dark " alt="" />
+                                        <li className="list-group-item p-2 d-flex gap-5 home_closebtn align-items-center">
+                                            <a className="text-decoration-none text-dark home_btn" href="#">Home</a>
+                                            <img src={closeperson} onClick={()=> setisvisible(false)} className="user_closebtn ms-5 rounded-5 bg-dark" alt="" />
                                         </li>
 
-
-                                        <li className="list-group-item  p-2">
-                                            <a className="text-decoration-none  text-dark" href="#">Matching Jobs</a>
+                                        <li className="list-group-item p-2">
+                                            <a className="text-decoration-none text-dark" href="#">Matching Jobs</a>
                                         </li>
 
                                         <li className="list-group-item p-2">
@@ -141,7 +148,7 @@ const Herosection = () => {
                                         <li className="list-group-item p-2">
                                             <a className="text-decoration-none text-danger" href="#">Logout</a>
                                         </li>
-                                        
+
                                     </ul>
                                 </div>
                             </div>

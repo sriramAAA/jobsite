@@ -64,7 +64,7 @@ const Addjobpost = () => {
                     <label class="form-label">Mobile Number</label>
                     <div class="input-group">
                       <span class="input-group-text">+91</span>
-                      <input type="text" class="form-control" placeholder="Enter Mobile Number" />
+                      <input type=" text" class="form-control" placeholder="Enter Mobile Number" />
                     </div>
                   </div>
                   <div class="col-md-4">
