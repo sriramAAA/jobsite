@@ -1,45 +1,67 @@
 
-import React from 'react';
-import { Routes, Route } from 'react-router-dom';
-import Navbar from './component/Navbar';
-import Herosection from './pages/Herosection';
-import { useState } from 'react';
-import Footer from './component/Footer';
+// import React from 'react';
+// import Navbar from './component/Navbar';
+// import Herosection from './pages/Herosection';
+// import Addjobpost from './pages/Addjobpost';
 
+
+
+// const App = () => {
+
+
+
+
+
+
+
+//   return (
+//     <>
+//    < Navbar/>
+// <Herosection />
+// <Addjobpost />
+//     </>
+//   );
+// };
+
+// export default App;
+
+
+import React from "react";
+import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
+import Navbar from "./component/Navbar";
+import Herosection from "./pages/Herosection";
+import Addjobpost from "./pages/Addjobpost";
+
+// import './stylesheet/style.css'
+import './stylesheet/style.css';
 
 
 
 const App = () => {
-
-  // form hidden and visible function
-
-  const [isvisible ,setisvisible]=useState(false)
-
-
-  const togglehandle=()=>{
-
-    setisvisible(!isvisible)
-  }
-  
-
-
-// user profile hidden and visible function
-
-  const[user,setuser]=useState(false)
-
-const usertoggle=()=>{
-  setuser(!user)
-}
-
-  
   return (
-    <>
-      <Navbar togglehandle={togglehandle} usertoggle={usertoggle} />
+
+
+<>
+
+
+      <Navbar />
       <Routes>
-        <Route path="/" element={<Herosection isvisible={isvisible} togglehandle={togglehandle} user={user}  usertoggle={usertoggle}  />} />
+        <Route path="/" element={<Herosection />} />
+        <Route path="/addjobpost" element={<Addjobpost />} />
       </Routes>
-      <Footer />
-    </>
+
+
+</>
+
+
+
+
+   
+
+
+
+
+
   );
 };
 
