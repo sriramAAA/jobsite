@@ -1,7 +1,7 @@
 import React from 'react';
 
 import "@fortawesome/fontawesome-free/css/all.min.css"; 
-import footer from "../img/Frame-721.png";
+import footer from "../img/Footer-img/Frame 721.png";
 import img1 from "../img/Footer-img/1.png";
 import img2 from "../img/Footer-img/2.png";
 import img3 from "../img/Footer-img/3.png";

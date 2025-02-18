@@ -17,6 +17,11 @@
    
     background: linear-gradient(180deg, #00556E 0%, #00A4D4 100%);
 
-
-
 }
+
+.img-fluid {
+    width: 100%;
+    height: auto;
+  }
+  
+

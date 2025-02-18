@@ -51,8 +51,8 @@ const Navbar = ({usertoggle ,userformtoggle }) => {
             <li className="nav-item"> <Link to="/addjobpost"   className="btn nav_loginbtn text-white text-decoration-none"> Add Job Post </Link></li>
             
             {/* Icons */}
-            <li className="nav-item"> <Link to="/" className="  text-decoration-none"> <img src={fav} alt="Favorite" className="icon-img" /> </Link> </li>
-            <li className="nav-item"> <Link to="/" className="  text-decoration-none"> <img src={chat} alt="Chat" className="icon-img" /> </Link> </li>
+            <li className="nav-item"> <Link to="/Favorite" className="  text-decoration-none"> <img src={fav} alt="Favorite" className="icon-img" /> </Link> </li>
+            <li className="nav-item"> <Link to="/notifications" className="  text-decoration-none"> <img src={chat} alt="Chat" className="icon-img" /> </Link> </li>
             <li className="nav-item"> <Link to="/" className="  text-decoration-none"> <img src={location} alt="Location" className="icon-img" /> </Link> </li>
             <li className="nav-item"> <Link to="/" className="  text-decoration-none"    > <img src={person} onClick={usertoggle} alt="Profile" className="icon-img profile-btn" /> </Link> </li>
 
